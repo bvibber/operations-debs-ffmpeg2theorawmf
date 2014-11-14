@@ -1,0 +1,5 @@
+ffmpeg2theorawmf (0.29+git-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Brion Vibber <brion@pobox.com>  Fri, 14 Nov 2014 01:39:21 -0800
