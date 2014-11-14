@@ -12,12 +12,13 @@
 %:
 	dh $@ 
 
-override_dh_auto_configure:
+override_dh_auto_build:
 	./build_ffmpeg.sh
-	dh_auto_configure
+	rm -f config.log
+	scons
 
 override_dh_auto_install:
 	test -d debian/tmp || mkdir -p debian/tmp
 	cp ffmpeg2theora debian/tmp/ffmpeg2theorawmf
-	dh_install ffmpeg2theora usr/bin
+	dh_install ffmpeg2theorawmf usr/bin
 
